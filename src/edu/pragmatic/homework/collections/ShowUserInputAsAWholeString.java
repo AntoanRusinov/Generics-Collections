@@ -13,11 +13,11 @@ public class ShowUserInputAsAWholeString {
 			while(!( line = console.nextLine() ).equals("END OF TEXT")){
 				userInput.add(line);
 			}
-			System.out.println(concatinateUserInputIntoASingleWord(userInput));
+			System.out.println(concatenateUserInputIntoASingleWord(userInput));
 		}
 	}
 
-	private static String concatinateUserInputIntoASingleWord(List<String> userInput) {
+	private static String concatenateUserInputIntoASingleWord(List<String> userInput) {
 		StringBuilder sb = new StringBuilder();
 		for (String input : userInput) {
 			sb.append(input);
